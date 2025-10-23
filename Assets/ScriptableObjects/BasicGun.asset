@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b10a5eab73d8e4f43b4a490260ea44c0, type: 3}
   m_Name: BasicGun
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  fireRate: 0.5
+  maxHealth: 30
+  fireRate: 2
+  range: 15
   shootAnimationName: Shoot
   idleAnimationName: Idle
   dieAnimationName: Die
