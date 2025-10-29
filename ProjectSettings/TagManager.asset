@@ -7,6 +7,8 @@ TagManager:
   - Coin
   - Enemy
   - FxTemporaire
+  - Floor
+  - Step
   layers:
   - Default
   - TransparentFX
