@@ -13,11 +13,18 @@ MonoBehaviour:
   m_Name: BasicGun
   m_EditorClassIdentifier: 
   maxHealth: 30
+  actionAssets:
+  - soundName: 
+    animationName: Idle
+    actionKey: 0
+  - soundName: appear
+    animationName: 
+    actionKey: 4
+  - soundName: shoot
+    animationName: Shoot
+    actionKey: 2
+  - soundName: die
+    animationName: Die
+    actionKey: 5
   fireRate: 2
   range: 15
-  shootAnimationName: Shoot
-  idleAnimationName: Idle
-  dieAnimationName: Die
-  shootSoundName: shoot
-  dieShootName: die
-  appearSoundName: appear
