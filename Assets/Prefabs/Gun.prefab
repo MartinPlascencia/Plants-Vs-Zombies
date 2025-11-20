@@ -338,6 +338,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onDamaged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1448900795013822026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -359,7 +362,7 @@ MonoBehaviour:
   enemiesLayer:
     serializedVersion: 2
     m_Bits: 128
-  raycastOffset: 0
+  raycastOffset: 2
 --- !u!1 &3061620409278037674
 GameObject:
   m_ObjectHideFlags: 0

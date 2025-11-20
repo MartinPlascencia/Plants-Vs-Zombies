@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
+using UnityEngine.Events;
 
 public class Flower : BasePlant
 {
@@ -12,6 +13,8 @@ public class Flower : BasePlant
     private InstantiatePoolObjects coinPool;
     [SerializeField]
     private float coinsOffsetY = 0.5f;
+    [SerializeField]
+    private UnityEvent<Transform> onSpawnCoin;
     private List<Step> stepsInRange = new List<Step>();
     private Coroutine spawnCoinCoroutine;
     public override bool IsActive
@@ -29,7 +32,7 @@ public class Flower : BasePlant
     }
     private void OnEnable()
     {
-        //SoundManager.instance.Play(flowerData.GetSoundName(ActionKey.Appear));
+        SoundManager.instance.Play(flowerData.GetSoundName(ActionKey.Appear));
         health.InitializeHealth(flowerData.maxHealth);
         animator.Play(flowerData.GetAnimationName(ActionKey.Idle), 0, 0f);
     }
@@ -45,6 +48,9 @@ public class Flower : BasePlant
         while (isActive && health.CurrentHealth > 0)
         {
             yield return new WaitForSeconds(flowerData.spawnCoinTime);
+            onSpawnCoin?.Invoke(transform);
+            animator.Play(flowerData.GetAnimationName(ActionKey.Attack), 0, 0f);
+            SoundManager.instance.Play(flowerData.GetSoundName(ActionKey.Attack));
             for (int i = 0; i < flowerData.coinAmount; i++)
             {
                 if (stepsInRange.Count > 0)
