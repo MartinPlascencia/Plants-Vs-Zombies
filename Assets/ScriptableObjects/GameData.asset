@@ -9,16 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fa6308614d517b4a961f98cb827cf3d, type: 3}
-  m_Name: Level1
+  m_Script: {fileID: 11500000, guid: e62c0aea6cce6e7458607541018e2934, type: 3}
+  m_Name: GameData
   m_EditorClassIdentifier: 
-  enemiesToSpawn:
-  - spawnTime: 2
-    enemyType: 0
-    laneIndex: 0
-  - spawnTime: 6
-    enemyType: 1
-    laneIndex: 1
-  - spawnTime: 10
-    enemyType: 0
-    laneIndex: 0
+  currentLevelIndex: 0
+  levels:
+  - {fileID: 11400000, guid: 587f0caa3c4895c4cb30faa751a6dc4c, type: 2}

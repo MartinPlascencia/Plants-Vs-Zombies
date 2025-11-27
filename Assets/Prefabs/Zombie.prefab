@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 6100344920490180697}
   - component: {fileID: 7937867797428129733}
   - component: {fileID: 6393061306677141681}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Zombie
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -161,6 +161,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onDamaged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &6393061306677141681
 MonoBehaviour:
   m_ObjectHideFlags: 0
