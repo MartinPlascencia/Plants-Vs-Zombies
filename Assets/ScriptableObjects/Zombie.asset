@@ -29,6 +29,9 @@ MonoBehaviour:
   - soundName: zombie_appear
     animationName: 
     actionKey: 4
+  - soundName: zombie_appear
+    animationName: Dancing
+    actionKey: 6
   attackRange: 3.5
   timeBetweenAttacks: 2
   attackDuration: 1.5
