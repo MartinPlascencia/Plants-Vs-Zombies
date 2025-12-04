@@ -1035,7 +1035,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1146388167}
         m_TargetAssemblyTypeName: GoToScene, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadSceneWithFade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1112,7 +1112,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0a4e5071b5d9f548ae4063b2a246479, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneName: Game
+  _sceneName: Map
+  fadeAnimator: {fileID: 1854492935}
+  fadeAnimationName: FadeOut
+  onSceneLoad:
+    m_PersistentCalls:
+      m_Calls: []
+  onStartScene:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1146388168
 Transform:
   m_ObjectHideFlags: 0

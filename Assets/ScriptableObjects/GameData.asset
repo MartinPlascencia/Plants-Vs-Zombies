@@ -15,3 +15,5 @@ MonoBehaviour:
   currentLevelIndex: 0
   levels:
   - {fileID: 11400000, guid: 587f0caa3c4895c4cb30faa751a6dc4c, type: 2}
+  - {fileID: 11400000, guid: 642c6a07819b023498d9cd3c3d5c51a7, type: 2}
+  - {fileID: 11400000, guid: 1dc6ced78a20ea64bafce32fb7bea508, type: 2}
